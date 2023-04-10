@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulando Dados</title>
+    <style>
+        body {
+            color: rgb(0, 0, 0);
+            font: normal 15pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tratando dados!</h1>
+    <p>O que acontecerá?</p>
+    <script>
+        /* (NUMEROS INTEIROS)
+       var n1 = Number.parseInt(prompt('Digite um número: '))
+       var n2 = Number.parseInt(prompt('Digite outro número: ') */
+       /* (NUMEROS COM VIRGULA)
+       var n1 = Number.parseFloat(prompt('Digite um número: '))
+       var n2 = Number.parseFloat(prompt('Digite outro número: ') )
+       */
+      /* (INTEIRO OU COM VIRGULA)
+       var n1 = Number(prompt('Digite um número: '))
+       var n2 = Number(prompt('Digite outro número: ') )
+       */
+       var n1 = Number(prompt('Digite um número: '))// JS irá decidir.
+       var n2 = Number(prompt('Digite outro número: ') )
+       var s = n1 + n2
+       alert(`A soma entre ${n1} e ${n2} é igual a ${s}`)//concatenação
+       /*number + number = adição
+       string + string = concatenação
+       String(o que irá converter) ou n.toString()
+       s.length diz quantas letras a string tem
+       s.toUpperCase()--> maiúsculo
+       s.toLowerCase()--> minúsculo 
+       /*
+        .toFixed(2) --> duas casas após o número
+        .toFixed(2).replace('.' , ',') --> troca o ponto por vírgula
+        */
+    </script>
+</body>
+</html>

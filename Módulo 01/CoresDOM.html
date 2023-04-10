@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caixas de Cores</title>
+    <style>
+        body{
+            background-color: rgb(25, 25, 122);
+            color: white;
+            font-family: 'Times New Roman', Times, serif;
+            font: normal 15pt Arial; 
+        }
+        div#x {
+            background-color: rgb(25, 25, 122);
+            width: 250px;
+            height: 250px;
+            text-align: center;
+            line-height: 250px;
+            margin-left: 650px;
+            margin-top: 40px;
+        }
+        h2 {
+            text-align: center;
+            margin-left: 40px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+    </style>
+</head>
+<body>
+    <h2>Animação de cores:</h2>
+    <div id="x" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()">
+        Caixa 
+    </div>
+    </div>
+    <script>
+        var c = document.querySelector('div#x')
+            function clicar () {
+            c.innerHTML = 'Clicou!'
+            c.style.background = 'red'
+        }
+            function entrar () {
+            c.innerHTML = 'Entrou!'
+            c.style.backgroundColor = 'Blue'
+        }
+            function sair () {
+            c.innerHTML = 'Saiu!'
+            c.style.backgroundColor = 'green'
+            }
+    </script>
+
+</body>
+</html>

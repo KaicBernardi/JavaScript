@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplicação</title>
+    <style>
+        body {
+            background-color: rgb(39, 35, 130);
+            color: white;
+        }
+        div#res {
+            margin-top: 10px;
+            font-size: 14pt;
+            margin-left: 500px;
+        }
+        h1 {
+            margin-left: 550px;
+        }
+        input#txtn1 {
+            margin-left: 500px;
+            border-bottom: 10px;
+            border-style: hidden;
+            border-radius: 5pt;
+        }
+        input#txtn2 {
+            border-bottom: 10px;
+            border-style: hidden;
+            border-radius: 5pt;
+        }
+    </style>
+</head>
+<body>
+    <h1>Multiplicando Valores:</h1>
+    <input type="number" name="txtn1" id="txtn1"> *
+    <input type="number" name="txtn2" id="txtn2">
+    <input type="button" value="Multiplicar" onclick="multiplicar()">
+    <div id="res">Resultado</div>
+    <script>
+        function multiplicar() {
+            var tn1 = document.getElementById('txtn1')
+            var tn2 = document.getElementById('txtn2')
+            var n1 = Number(tn1.value)
+            var n2 = Number(tn2.value)
+            var m = n1 * n2
+            res.innerHTML = `A multiplicação entre ${n1} e ${n2} tem o resultado igual a ${m}!`
+        }
+    </script>
+</body>
+</html>
